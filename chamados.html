@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamados TI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <ul class="menu">
+
+        <li title="home"><a href="#" class="menu-button home">menu</a></li>
+        
+        <li title="search"><a href="#" class="search">search</a></li>
+        <li title="pencil"><a href="#" class="pencil">pencil</a></li>
+        <li title="about"><a href="#" class="active about">about</a></li>
+        <li title="archive"><a href="#" class="archive">archive</a></li>
+        <li title="contact"><a href="#" class="contact">contact</a></li>
+      </ul>
+      
+      <ul class="menu-bar">
+          <li><a href="#" class="menu-button">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chamados.html">Chamados TI</a></li>
+          <li><a href="#">Em Breve</a></li>
+          <li><a href="#">Em Breve</a></li>
+      </ul>
+      <div class="content">
+        <h1>Abrir Chamado de TI</h1>
+        <div class="form-container">
+            <form action="https://formsubmit.co/suporte.ti@kopermax.com.br" method="POST">
+                <label for="setor">Setor:</label>
+                <select id="setor" name="setor" required>
+                    <option value="TI">TI</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="RH">RH</option>
+                    <option value="Comercial">Comercial</option>
+                </select>
+
+                <label for="setor">Nome:</label>
+                <textarea id="text" name="nome" rows="1" placeholder="Escreva seu nome" required></textarea> 
+
+                <label for="descricao">Descrição do Problema:</label>
+                <textarea id="descricao" name="descricao" rows="5" placeholder="Descreva o problema aqui..." required></textarea>
+
+                <label for="nivel">Nível do Problema:</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="Baixo">Baixo</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Alto">Alto</option>
+                    <option value="Urgente">Urgente</option>
+                </select>
+
+                <input type="submit" value="Enviar Chamado">
+            </form>
+        </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
